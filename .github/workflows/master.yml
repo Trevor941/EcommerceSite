@@ -18,4 +18,4 @@ jobs:
         server:  ftp.onlinewebdesigners.co.za
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        
+        server-dir: /public_html/ecommercesite/
