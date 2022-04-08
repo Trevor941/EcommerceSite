@@ -8,7 +8,7 @@ use App\Models\Product;
 use App\Models\Size;
 use App\Models\Category;
 class ProductsController extends Controller
-{
+{ 
     /**
      * Display a listing of the resource.
      *

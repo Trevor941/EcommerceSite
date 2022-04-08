@@ -18,6 +18,7 @@ class CustomerController extends Controller
     {
         return view('store.login');
     }
+    
 
     public function myaccount()
     {

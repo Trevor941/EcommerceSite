@@ -42,7 +42,7 @@ class PaymentController extends Controller
             'transaction_id' => $transaction_id,
             'date' => $payment_date
         ]);
-
+ 
         //remove everything from the session
         $request->session()->flush();
         return redirect('/thankyou')->with('orderno',  $orderno);

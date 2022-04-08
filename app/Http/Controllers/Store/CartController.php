@@ -18,7 +18,7 @@ class CartController extends Controller
      if(!$product){
          abort(404);
      }
-
+ 
      $cart = session()->get('cart');
      
      //if cart is empty then this the first product

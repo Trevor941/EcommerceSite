@@ -46,7 +46,7 @@
         @include('store.layouts.partials.footer')
 
         <!-- Footer Bottom End -->       
-        
+         
         <!-- Back to Top -->
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         
