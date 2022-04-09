@@ -52,7 +52,7 @@
                         {{$user->phone}}
                         @else
                           ____
-                        @endforeach
+                        @endif
                     </td>
                     <td>{{$user->created_at}}</td>
                    </tr>
