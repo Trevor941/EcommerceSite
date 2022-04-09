@@ -158,7 +158,7 @@
                                @else
                                <span class="badge badge-warning p-2"> {{$order->orderstatuses->name}}</span>
                                 @endif
-                               
+                                
                             </td>
                             <td>{{$order->cost}}</td>
                         </tr>
