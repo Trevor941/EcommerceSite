@@ -36,7 +36,7 @@
                                 <img src="{{asset('store/img/slider-2.jpg')}}" alt="Slider Image" />
                                 <div class="header-slider-caption">
                                     <p>Some text goes here that describes the image</p>
-                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                    <a class="btn" href="/store/products"><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
                             <div class="header-slider-item">
