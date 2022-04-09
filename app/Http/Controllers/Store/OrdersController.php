@@ -13,11 +13,10 @@ use App\Http\Requests\CreateOrderValidateRequest;
 use Carbon\Carbon;
 class OrdersController extends Controller
 {
-  public function __construct()
-  {
-      // $this->middleware('auth');
-      // $this->middleware('admin');
-  }
+  public  function  __construct(){
+    $this->middleware('admin')->only('index');
+   
+ }
 
     public function checkout(){
         return view('store.checkout');

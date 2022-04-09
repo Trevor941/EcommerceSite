@@ -15,7 +15,8 @@ class CategoriesSeeder extends Seeder
     public function run()
     {
         $category1 = Category::create([
-            'name' => 'men',
+            'name' => 'Best Selling',
+            'fontawesome' => 'fa fa-briefcase',
             'description' => '',
             'slug' => '',
             'CountProducts' => 0,
@@ -23,7 +24,8 @@ class CategoriesSeeder extends Seeder
         ]);
 
         $category2 = Category::create([
-            'name' => 'women',
+            'name' => 'New Arrivals',
+            'fontawesome' => 'fa fa-calendar-plus',
             'description' => '',
             'slug' => '',
             'CountProducts' => 0,
@@ -31,7 +33,8 @@ class CategoriesSeeder extends Seeder
         ]);
 
         $category3 = Category::create([
-            'name' => 'kids',
+            'name' => 'Fashion & Beauty',
+            'fontawesome' => 'fa fa-tshirt',
             'description' => '',
             'slug' => '',
             'CountProducts' => 0,
@@ -39,7 +42,8 @@ class CategoriesSeeder extends Seeder
         ]);
 
         $category4 = Category::create([
-            'name' => 'Dresses',
+            'name' => 'Kids & Babies Clothes',
+            'fontawesome' => 'fa fa-child',
             'description' => '',
             'slug' => '',
             'CountProducts' => 0,
@@ -47,7 +51,8 @@ class CategoriesSeeder extends Seeder
         ]);
 
         $category5 = Category::create([
-            'name' => 'Shirts',
+            'name' => 'Men & Women Clothes',
+            'fontawesome' => 'fa fa-restroom',
             'description' => '',
             'slug' => '',
             'CountProducts' => 0,
@@ -55,11 +60,22 @@ class CategoriesSeeder extends Seeder
         ]);
 
         $category6 = Category::create([
-            'name' => 'T-Shirts',
+            'name' => 'Phones & Computers',
+            'fontawesome' => 'fa fa-desktop',
             'description' => '',
             'slug' => '',
             'CountProducts' => 0,
             'image' => ''
         ]);
+
+        $category7 = Category::create([
+            'name' => 'Electronics & Accessories',
+            'fontawesome' => 'fa fa-theater-masks',
+            'description' => '',
+            'slug' => '',
+            'CountProducts' => 0,
+            'image' => ''
+        ]);
+        
     }
 }

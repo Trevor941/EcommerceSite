@@ -27,7 +27,7 @@ $data = array(
     // Merchant details
     'merchant_id' => '10000100',
     'merchant_key' => '46f0cd694581a',
-    'return_url' => 'https://www.onlinewebdesigners.co.za/',
+    'return_url' => 'https://www.ecommercesite.onlinewebdesigners.co.za/',
     'cancel_url' => 'http://www.yourdomain.co.za/cancel.php',
     'notify_url' => 'http://www.yourdomain.co.za/notify.php',
     // Buyer details
