@@ -29,4 +29,8 @@ class CustomerController extends Controller
         return view('store.contact');
     }
 
+    public function allcustomers(){
+        return view ('customers.index');
+    }
+
 }

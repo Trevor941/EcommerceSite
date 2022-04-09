@@ -30,7 +30,7 @@
                                         <div class="cart-content text-center">
                                             <h1>Thank You.</h1>
                                             <hr>
-                                            <p class="text-success">Thank you for purchasing our product. <br> Your Order ID is <b>{{Session::get('order_id')}}  {{Session::get('orderno')}}</b></p>
+                                            <p class="text-success">Thank you for purchasing our product. <br> Your Order Number is <b>{{Session::get('order_id')}}  {{Session::get('orderno')}}</b></p>
                                             <hr>
                                         </div>
                                     </div>
