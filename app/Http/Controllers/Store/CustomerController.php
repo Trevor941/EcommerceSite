@@ -32,8 +32,8 @@ class CustomerController extends Controller
 
     public function allcustomers(){
 
-        $customers = User::all();
-        return view ('customers.index', compact('customers'));
+        $users = User::all();
+        return view ('customers.index', compact('users'));
     }
 
 }
