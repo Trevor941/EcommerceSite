@@ -51,10 +51,10 @@
                         @if($user->phone !== NULL)
                         {{$user->phone}}
                         @else
-                          ____
+                         <span class="text-center"> ____</span>
                         @endif
                     </td>
-                    <td>{{$user->created_at}}</td>
+                    <td>{{$user->created_at->format('d/m/y')}}</td>
                    </tr>
                     @endforeach
                 </tbody>
