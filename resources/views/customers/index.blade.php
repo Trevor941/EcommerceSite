@@ -8,7 +8,7 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold" style="color: #FF6F61; ">DataTables Example</h6>
+        <h6 class="m-0 font-weight-bold" style="color: #FF6F61; ">Customers DataTable</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -41,9 +41,19 @@
                     <td>{{$user->id}}</td>
                     <td>{{$user->firstname}}</td>
                     <td>{{$user->lastname}}</td>
-                    <td>{{$user->roles}}</td>
+                    <td>
+                        @foreach ($user->roles as $role)
+                        {{$role->name}},  
+                        @endforeach
+                    </td>
                     <td>{{$user->email}}</td>
-                    <td>{{$user->phone}}</td>
+                    <td>
+                        @if($user->phone !== NULL)
+                        {{$user->phone}}
+                        @else
+                          ____
+                        @endforeach
+                    </td>
                     <td>{{$user->created_at}}</td>
                    </tr>
                     @endforeach
