@@ -43,7 +43,7 @@ Route::get('/orders', 'App\Http\Controllers\Store\OrdersController@index')->name
 Route::post('/bulkactionsorders','App\Http\Controllers\Store\OrdersController@bulkactionsorders')->name('orders.bulkactionsorders');
 Route::get('/autocomplete', 'App\Http\Controllers\Store\OrdersController@autocomplete')->name('autocomplete');
 Route::get('/customerlogin', 'App\Http\Controllers\Store\CustomerController@customerlogin')->name('customerlogin');
-Route::get('/allcustomers', 'App\Http\Controllers\Store\CustomerController@allcustomers')->name('allcustomers');
+Route::get('/allcustomers', 'App\Http\Controllers\Store\CustomerController@allcustomers')->name('allcustomers.index');
 
 Route::get('/cart','App\Http\Controllers\Store\CartController@cart')->name('cart');
 Route::post('/addtocart/{id}','App\Http\Controllers\Store\CartController@addtocart')->name('addtocart');
