@@ -80,11 +80,7 @@
         <i class="far fa-credit-card"></i>
         <span>Coupons</span></a>
 </li>
-<li class="nav-item">
-    <a class="nav-link" href="#">
-        <i class="fas fa-user-tie"></i>
-        <span>Users</span></a>
-</li>
+
   <!-- Divider -->
   <hr class="sidebar-divider">
 
