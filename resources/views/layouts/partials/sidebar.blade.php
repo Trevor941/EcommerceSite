@@ -116,7 +116,7 @@
     <span>Google Analytics</span></a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#">
+<a class="nav-link" href="{{route('google.searchconsole.edit')}}">
   <i class="fas fa-search"></i>
     <span>Google Search Console</span></a>
 </li>

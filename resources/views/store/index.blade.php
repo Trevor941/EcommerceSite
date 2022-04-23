@@ -1,4 +1,9 @@
 @extends('store.layouts.app')
+@section('metadata')
+@if ($googlesearchconsole !== null)
+  {{$googlesearchconsole->id}}
+@endif
+@endsection
 @section('content')
 
         <!-- Main Slider Start -->

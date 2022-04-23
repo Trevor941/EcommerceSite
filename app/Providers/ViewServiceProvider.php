@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Product;
 use App\Models\Tag;
-use App\Models\Category;
+use App\Models\{Category, Googlesearchconsole};
 class ViewServiceProvider extends ServiceProvider
 {
     /**
@@ -60,7 +60,9 @@ class ViewServiceProvider extends ServiceProvider
             $view->with('categories', Category::all());
         });
         
-      
+        View::composer('store.index', function ($view) {
+            $view->with('googlesearchconsole', Googlesearchconsole::get()->first());
+        });
       
     }
 }

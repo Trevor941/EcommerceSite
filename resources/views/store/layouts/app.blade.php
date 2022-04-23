@@ -12,6 +12,8 @@
          <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <!--dynamic meta data-->
+   <?php echo $googlesearchconsole->name ?>
     <title>{{ config('app.name', 'Laravel') }}</title>
 
 
