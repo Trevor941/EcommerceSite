@@ -61,5 +61,8 @@
         <!-- Template Javascript -->
         <script src="{{asset('store/js/main.js')}}"></script>
              @yield('scripts')
+
+             <?php  echo $analytics->name ?>
+             
     </body>
 </html>

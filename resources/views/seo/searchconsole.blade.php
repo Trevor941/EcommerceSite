@@ -20,24 +20,4 @@
     </div>
    
 </div>
-<style>
-    #addproduct{
-      padding: 20px;
-    background: #fff;
-    margin-bottom: 20px;
-    }
-    .darkerlightbg{
-  background: #f8f9fc;
-    padding: 10px;
-    border-radius: 5px; 
-    }
-    
-</style>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.ckeditor').ckeditor();
-    });
-
-})
-</script>
 @endsection

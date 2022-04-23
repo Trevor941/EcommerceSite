@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Product;
 use App\Models\Tag;
-use App\Models\{Category, Googlesearchconsole};
+use App\Models\{Category, Googlesearchconsole, Googleanalytics};
 class ViewServiceProvider extends ServiceProvider
 {
     /**
@@ -62,6 +62,10 @@ class ViewServiceProvider extends ServiceProvider
         
         View::composer('store.layouts.app', function ($view) {
             $view->with('googlesearchconsole', Googlesearchconsole::get()->first());
+        });
+
+        View::composer('store.layouts.app', function ($view) {
+            $view->with('analytics', Googleanalytics::get()->first());
         });
       
     }

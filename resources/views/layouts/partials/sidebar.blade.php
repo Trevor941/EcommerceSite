@@ -111,7 +111,7 @@
 <!-- Nav Item - Product Collapse Menu -->
 
 <li class="nav-item">
-<a class="nav-link" href="#">
+<a class="nav-link" href="{{route('google.analytics.edit')}}">
   <i class="fas fa-chart-pie"></i>
     <span>Google Analytics</span></a>
 </li>

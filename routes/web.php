@@ -45,9 +45,13 @@ Route::get('/autocomplete', 'App\Http\Controllers\Store\OrdersController@autocom
 Route::get('/customerlogin', 'App\Http\Controllers\Store\CustomerController@customerlogin')->name('customerlogin');
 Route::get('/allcustomers', 'App\Http\Controllers\Store\CustomerController@allcustomers')->name('allcustomers.index');
 
-//Route::get('/seo/searchconsole', 'App\Http\Controllers\GooglesearchanalyticsController@searchconsoleview')->name('google.searchconsole');
+//Search console 
 Route::get('/seo/searchconsoles', 'App\Http\Controllers\GooglesearchanalyticsController@editsearchconsole')->name('google.searchconsole.edit');
 Route::post('/seo/searchconsole', 'App\Http\Controllers\GooglesearchanalyticsController@searchconsolestore')->name('google.searchconsole.store'); 
+
+//Analytics
+Route::get('/seo/analytics', 'App\Http\Controllers\GooglesearchanalyticsController@editanalytics')->name('google.analytics.edit');
+Route::post('/seo/analytics', 'App\Http\Controllers\GooglesearchanalyticsController@analyticstore')->name('google.analytics.store'); 
 
 Route::get('/cart','App\Http\Controllers\Store\CartController@cart')->name('cart');
 Route::post('/addtocart/{id}','App\Http\Controllers\Store\CartController@addtocart')->name('addtocart');
