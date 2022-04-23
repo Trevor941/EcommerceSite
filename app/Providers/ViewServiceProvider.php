@@ -60,7 +60,7 @@ class ViewServiceProvider extends ServiceProvider
             $view->with('categories', Category::all());
         });
         
-        View::composer('store.index', function ($view) {
+        View::composer('store.layouts.app', function ($view) {
             $view->with('googlesearchconsole', Googlesearchconsole::get()->first());
         });
       
